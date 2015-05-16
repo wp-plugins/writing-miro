@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: Valentin Despa
-Tags: editor, writing, focus, fullscreen, preview
+Tags: distraction-free, editor, writing, focus, fullscreen, preview
 Requires at least: 4.0.0
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -53,8 +53,11 @@ Also PHP 5.2 is rather old, slower and may have security issues. Consider updati
 
 == Changelog ==
 
+= 1.0.2 =
+Fixes a problem with the plugin settings page (settings from other plugins were displayed as well)
+
 = 1.0.1 =
-Fix an incompatibility with sg-cachepress (headers already sent by)
+Fixes an incompatibility with sg-cachepress (headers already sent by)
 
 = 1.0.0 =
 * Initial version with basic functionality.

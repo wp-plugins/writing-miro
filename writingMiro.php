@@ -3,7 +3,7 @@
  * Plugin Name: Writing Miro
  * Plugin URI: http://vdespa.de/
  * Description: Distraction free writing
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Valentin Despa
  * Author URI: http://vdespa.de
  * License: GPLv3 or later
