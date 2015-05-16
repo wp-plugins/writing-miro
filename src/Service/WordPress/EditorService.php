@@ -97,36 +97,28 @@ class EditorService
 		&& $editor_id === 'content';
 	}
 
+	/**
+	 * Override the default background
+	 *
+	 * @return void
+	 */
 	protected function overrideBackground()
 	{
+		// Register style
+		wp_register_style(
+			'writing-miro', // handle name
+			Environment::getPluginURI() . '/resources/private/writing-miro.css', // the URL of the stylesheet
+			array(), // an array of dependent styles
+			'201505161709', // version number
+			'screen' // CSS media type
+		);
+
+		// Custom CSS fule to include the dynamic background
 		$backgroundFile = Environment::getPluginBackgroundURI() . $this->editor->getBackground()->getFileName();
-		$style = <<<EOF
-<style>
-    /*
-    .wp-fullscreen-wrap {
-        background-color: blue;
-    }
-    .wp-fullscreen {
-        background-color: blue;
-    }
-    */
-    .fullscreen-overlay {
-        /*background-color: blue;
-        background: blue !important;*/
-        background-image: url($backgroundFile) !important;
-    }
+		$custom_css = ".fullscreen-overlay { background-image: url($backgroundFile) !important;}";
+		wp_add_inline_style('writing-miro', $custom_css);
 
-    html.wp-fullscreen,
-    html.wp-fullscreen body#tinymce {
-        background: red !important;
-    }
-
-    div.mce-panel {
-        background: inherit !important;
-    }
-</style>
-EOF;
-		echo $style;
+		// Enqueue the CSS stylesheet
+		wp_enqueue_style('writing-miro');
 	}
-
 }

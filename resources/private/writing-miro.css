@@ -1,0 +1,8 @@
+html.wp-fullscreen,
+html.wp-fullscreen body#tinymce {
+	background: red !important;
+}
+
+div.mce-panel {
+	background: inherit !important;
+}

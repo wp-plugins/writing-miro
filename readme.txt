@@ -3,7 +3,7 @@ Contributors: Valentin Despa
 Tags: editor, writing, focus, fullscreen, preview
 Requires at least: 4.0.0
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +52,9 @@ Also PHP 5.2 is rather old, slower and may have security issues. Consider updati
 2. Focus on writing, no distractions.
 
 == Changelog ==
+
+= 1.0.1 =
+Fix an incompatibility with sg-cachepress (headers already sent by)
 
 = 1.0.0 =
 * Initial version with basic functionality.
