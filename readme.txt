@@ -1,6 +1,6 @@
 === Plugin Name ===
-Contributors: vdespa
-Tags: comments, spam
+Contributors: Valentin Despa
+Tags: editor, writing, focus, fullscreen, preview
 Requires at least: 4.0.0
 Tested up to: 4.2.2
 Stable tag: 1.0.0
